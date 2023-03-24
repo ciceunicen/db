@@ -1,5 +1,8 @@
+CREATE DATABASE cice_db;
+USE cice_db
+
 CREATE TABLE `user` (
-  `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `id` bigint PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `email` varchar(255) UNIQUE NOT NULL,
   `password` varchar(255) NOT NULL,
   `name` varchar(100) NOT NULL,
